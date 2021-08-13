@@ -1,13 +1,20 @@
 .logo{
-    margin-left: 12rem ;
+    margin-left: 7rem ;
+    color: rgb(52, 235, 192);
+    animation: 0.3s ease-in slideIntop;
+
 }
 .navbar{
 
     display: flex;
-    background-color: black;
+    background-color: rgb(5, 5, 5, 0.9);
     color: white;
     font-size: 2rem;
     justify-content: space-between;
+    /* padding-top: 1rem; */
+    letter-spacing: 2px;
+    font-weight: lighter;
+    
  
 
 }
@@ -19,7 +26,9 @@ ul{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-right: 12rem;
+    margin-right: 7rem;
+    flex-wrap: wrap;
+    animation: 0.3s linear slideIntop;
 
 
 
@@ -28,4 +37,29 @@ ul{
 li{
     margin-right: 4rem;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+@media (max-width: 1152px){
+  ul{
+      display: none;
+  }
+
+  .logo{
+      margin-left: 9rem;
+  }
+}
+
+@keyframes slideIntop {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 

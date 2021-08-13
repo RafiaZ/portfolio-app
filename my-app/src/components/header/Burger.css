@@ -1,0 +1,25 @@
+.burger{
+    background-color: rgb(52, 235, 192);
+    padding: 10px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    right: 10px;
+    display: none;
+}
+
+.dash{
+
+    background-color: white;
+    width: 25px;
+    height: 2px;
+}
+
+@media (max-width: 1152px){
+    .burger{
+        display: flex;
+        margin-right: 60px;
+    }
+  }
