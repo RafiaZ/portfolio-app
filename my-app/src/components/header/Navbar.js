@@ -12,13 +12,13 @@ function Navbar() {
             <div className="logo">
                 <h3>Rafia</h3>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul className="navbar-list">
+                <li className="navbar-list-item"><a href="#">Home</a></li>
+                <li className="navbar-list-item"><a href="#">About</a></li>
+                <li className="navbar-list-item"><a href="#">Skills</a></li>
+                <li className="navbar-list-item"><a href="#">Resume</a></li>
+                <li className="navbar-list-item"><a href="#">Portfolio</a></li>
+                <li className="navbar-list-item"><a href="#">Contact</a></li>
             </ul>
             <Burger/>
             

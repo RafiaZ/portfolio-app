@@ -14,7 +14,7 @@
 
 }
 
-ul{
+.navbar-list{
     display: flex;
     list-style: none;
     font-size: 1.2rem;
@@ -36,7 +36,7 @@ ul{
 
 }
 
-li{
+.navbar-list-item{
     margin-right: 4rem;
 }
 
@@ -47,7 +47,7 @@ a{
 }
 
 @media (max-width: 1152px){
-  ul{
+  .navbar-list{
       display: none;
   }
 
@@ -65,8 +65,6 @@ a{
     }
   }
 
-  .popup{
-      z-index: 1000;
-  }
+
 
 

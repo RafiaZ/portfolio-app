@@ -6,12 +6,12 @@ function Popup() {
     return (
         <div className="container">
              <ul className="container-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li className="popup-list__item"><a className="list__a" href="#">Home</a></li>
+                <li className="popup-list__item"><a className="list__a" href="#">About</a></li>
+                <li className="popup-list__item"><a className="list__a" href="#">Skills</a></li>
+                <li className="popup-list__item"><a className="list__a" href="#">Resume</a></li>
+                <li className="popup-list__item"><a className="list__a" href="#">Portfolio</a></li>
+                <li className="popup-list__item"><a className="list__a" href="#">Contact</a></li>
             </ul>
         </div>
     )
