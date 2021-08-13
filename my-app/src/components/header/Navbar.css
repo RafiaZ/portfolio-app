@@ -1,19 +1,14 @@
-.logo{
-    margin-left: 7rem ;
-    color: rgb(52, 235, 192);
-    animation: 0.3s ease-in slideIntop;
 
-}
 .navbar{
-
     display: flex;
-    background-color: rgb(5, 5, 5, 0.9);
+    background-color: rgba(5, 5, 5, 0.9);
     color: white;
     font-size: 2rem;
     justify-content: space-between;
     /* padding-top: 1rem; */
     letter-spacing: 2px;
     font-weight: lighter;
+
     
  
 
@@ -31,6 +26,13 @@ ul{
     animation: 0.3s linear slideIntop;
 
 
+
+}
+.logo{
+    margin-left: 7rem ;
+    color: rgb(52, 235, 192);
+    animation: 0.3s ease-in slideIntop;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -62,4 +64,9 @@ a{
       transform: translateY(0);
     }
   }
+
+  .popup{
+      z-index: 1000;
+  }
+
 
