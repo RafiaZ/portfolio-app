@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import Burger from '../header/Burger'
 import Popup from './Popup'
 import '../header/Navbar.css'
 
 function Navbar() {
+
+    const [popupIsOpen, setPopupIsOpen] = useState(false);
+
+    const handlePopup = () => {
+        setPopupIsOpen((prevState) => !prevState);
+      };
     return (
         <>
         <div className="navbar">
@@ -20,11 +26,11 @@ function Navbar() {
                 <li className="navbar-list-item"><a href="#">Portfolio</a></li>
                 <li className="navbar-list-item"><a href="#">Contact</a></li>
             </ul>
-            <Burger/>
+            <Burger onClick={handlePopup}/>
             
         </div>
          <div>
-         <Popup/>
+         {popupIsOpen && < Popup/>}
      </div>
 
      </>

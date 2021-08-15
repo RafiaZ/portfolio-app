@@ -3,21 +3,17 @@ import React, {useState} from 'react'
 import Popup from './Popup';
 import '../header/Burger.css'
 
-function Burger() {
-  const [popupIsOpen, setPopupIsOpen] = useState(false);
+function Burger(props) {
 
-  const handlePopup = () => {
-    setPopupIsOpen(prevState => !prevState);
-  };
 
     return (
         <>
-          <div className="burger" onClick={handlePopup}>
+          <div className="burger" onClick={props.onClick}>
               <span className="dash"></span>
               <span className="dash"></span>
               <span className="dash"></span>
           </div>
-          {popupIsOpen && <Popup/>}
+
         </>
     )
 }
