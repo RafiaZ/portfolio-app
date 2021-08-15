@@ -4,19 +4,20 @@ import Popup from './Popup';
 import '../header/Burger.css'
 
 function Burger() {
-    const [isOpen, setIsOpen] = useState(false);
+  const [popupIsOpen, setPopupIsOpen] = useState(false);
 
-    const handlePopup = () =>{
-        setIsOpen(!isOpen);
-    }
+  const handlePopup = () => {
+    setPopupIsOpen(prevState => !prevState);
+  };
+
     return (
         <>
-    
-        <div className="burger" onClick={handlePopup}>
-            <span className="dash"></span>
-            <span className="dash"></span>
-            <span className="dash"></span>
-        </div>
+          <div className="burger" onClick={handlePopup}>
+              <span className="dash"></span>
+              <span className="dash"></span>
+              <span className="dash"></span>
+          </div>
+          {popupIsOpen && <Popup/>}
         </>
     )
 }
