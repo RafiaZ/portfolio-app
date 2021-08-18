@@ -2,7 +2,9 @@ import React, {useState} from 'react'
 
 import Burger from '../header/Burger'
 import Popup from './Popup'
+//import Header from './Header'
 import '../header/Navbar.css'
+
 
 function Navbar() {
 
@@ -38,7 +40,8 @@ function Navbar() {
             <Burger onClick={handlePopup}/>
             
         </div>
-         <div>
+
+        <div>
          {popupIsOpen && < Popup/>}
      </div>
 

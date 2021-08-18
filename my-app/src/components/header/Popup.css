@@ -6,7 +6,8 @@
     padding: 105px;
     background: rgba(12, 10, 10, 0.8);
     margin-left: 70%;
-
+    position: absolute;
+    z-index: 1;
    
 }
 
