@@ -1,0 +1,22 @@
+.square{
+
+
+
+   display: flex;
+
+}
+.circle{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: 
+       url("../header/Assets/circle.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+       margin-left: 73px;
+    
+      
+      
+     
+}

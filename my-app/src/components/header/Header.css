@@ -8,10 +8,22 @@
        url("../header/Assets/headerimg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+
     background-attachment: fixed;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     
 }
+
+.square-container{
+    width: 25%;
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    border-radius: 10px;
+} 
 
 
