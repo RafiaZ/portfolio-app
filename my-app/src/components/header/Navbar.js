@@ -6,11 +6,23 @@ import '../header/Navbar.css'
 
 function Navbar() {
 
+    const links = [
+        {label: 'Home', href:'http://localhost:3000/'},
+        {label: 'About', href:'http://localhost:3000/'},
+        {label: 'Skills', href:'http://localhost:3000/'},
+        {label: 'Resume', href:'http://localhost:3000/'},
+        {label: 'Portfolio', href:'http://localhost:3000/'},
+        {label: 'Contact', href:'http://localhost:3000/'}
+
+    ]
+
     const [popupIsOpen, setPopupIsOpen] = useState(false);
 
     const handlePopup = () => {
-        setPopupIsOpen((prevState) => !prevState);
+        setPopupIsOpen((prevState)=> !prevState);
+      
       };
+     
     return (
         <>
         <div className="navbar">
@@ -19,12 +31,9 @@ function Navbar() {
                 <h3>Rafia</h3>
             </div>
             <ul className="navbar-list">
-                <li className="navbar-list-item"><a href="#">Home</a></li>
-                <li className="navbar-list-item"><a href="#">About</a></li>
-                <li className="navbar-list-item"><a href="#">Skills</a></li>
-                <li className="navbar-list-item"><a href="#">Resume</a></li>
-                <li className="navbar-list-item"><a href="#">Portfolio</a></li>
-                <li className="navbar-list-item"><a href="#">Contact</a></li>
+                {
+            links.map(link => <li className="navbar-list-item"><a {...link.href}>{link.label}</a></li>)
+            }
             </ul>
             <Burger onClick={handlePopup}/>
             
