@@ -6,9 +6,8 @@ function Header() {
         
         <div className="header-image">
 
-            <div className="square-container">
             <Square/>
-            </div>
+
             
 
             
