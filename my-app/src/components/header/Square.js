@@ -1,7 +1,10 @@
 import React from "react";
+
+
 import "./Square.css";
 
 function Square() {
+    
   return (
     <>
       <div className="square">
@@ -10,10 +13,13 @@ function Square() {
         <h1 className="name">Rafia .Z</h1>
 
         <div className="icons">
-          <div icon-circle>Hi</div>
-          <div icon-circle>Hi</div>
-          <div icon-circle>Hi</div>
-          <div icon-circle>Hi</div>
+          <div className="icon-circle">
+              
+          </div>
+          <div className="icon-circle">Hi</div>
+          <div className="icon-circle">Hi</div>
+          <div className="icon-circle">Hi</div>
+          <div className="icon-circle">Hi</div>
      </div>
     
       </div>
